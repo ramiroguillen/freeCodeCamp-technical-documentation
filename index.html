@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>freeCodeCamp Technical Documentation</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            JavaScript Basics
+        </header>
+        <a href="#What_is_JavaScript?" class="nav-link">
+            What is JavaScript?
+        </a>
+        <a href="#A_Hello_world!_example" class="nav-link">
+            A Hello world! example
+        </a>
+        <a href="#Variables" class="nav-link">
+            Variables
+        </a>
+        <a href="#Data_types" class="nav-link">
+            Data types
+        </a>
+        <a href="#Comments" class="nav-link">
+            Comments
+        </a>
+    </nav>
+    <main id="main-doc">
+
+        <section class="main-section" id="What_is_JavaScript?">
+            <header>
+                What is JavaScript?
+            </header>
+            <p>
+                JavaScript is a powerful programming language that can add interactivity to a website. It was invented
+                by
+                Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).
+            </p>
+            <p>
+                JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games,
+                animated 2D and 3D graphics, comprehensive database-driven apps, and much more!
+            </p>
+            <p>
+                JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools
+                on
+                top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These
+                include:
+            </p>
+            <ul>
+                <li>
+                    Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality
+                    such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream
+                    from a user's webcam, or generating 3D graphics and audio samples.
+                </li>
+                <li>
+                    Third-party APIs that allow developers to incorporate functionality in sites from other content
+                    providers, such as Twitter or Facebook.
+                </li>
+                <li>
+                    Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building
+                    sites and applications.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="A_Hello_world!_example">
+            <header>
+                A Hello world! example
+            </header>
+            <p>
+                Getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You
+                may have to start small, and progress gradually.
+            </p>
+            <p>
+                To begin, let's examine how to add JavaScript to your page for creating a Hello world! example.
+            </p>
+            <ol>
+                <li>
+                    Go to your test site and create a new folder named scripts. Within the scripts folder, create a new
+                    text document called <code>main.js</code>, and save it.
+                </li>
+                <li>
+                    In your <code>index.html</code> file, enter this code on a new line, just before the closing
+                    <code>&lt;/body&gt;</code> tag: <br>
+                    <code> &lt;script src="scripts/main.js"&gt; &lt;/script&gt;</code>
+                </li>
+                <li>
+                    This is doing the same job as the <code>&lt;link&gt;</code> element for CSS. It applies the
+                    JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else
+                    on the page).
+                </li>
+                <li>
+                    Add this code to the <code>main.js</code> file: <br>
+                    <code>const myHeading = document.querySelector('h1'); </code>
+                    <code>myHeading.textContent = 'Hello world!'; </code>
+                </li>
+                <li>
+                    Make sure the HTML and JavaScript files are saved. Then load <code>index.html</code> in your
+                    browser.
+                </li>
+            </ol>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>
+                Variables
+            </header>
+            <p>
+                Variables are containers that store values. You start by declaring a variable with the <code>let</code>
+                keyword, followed by the name you give to the variable:
+            </p>
+            <code>let myVariable;</code>
+            <p>
+                A semicolon at the end of a line indicates where a statement ends. It is only required when you need to
+                separate statements on a single line.
+            </p>
+            <p>
+                JavaScript is case sensitive. This means <code>myVariable</code> is not the same as
+                <code>myvariable</code>. If you have problems in your code, check the case!
+            </p>
+        </section>
+
+        <section class="main-section" id="Data_types">
+            <header>
+                Data types
+            </header>
+            <p>Note that variables may hold values that have different data types:</p>
+            <ul>
+                <li>
+                    String: This is a sequence of text known as a string. To signify that the value is a string, enclose
+                    it in single quote marks.
+                </li>
+                <li>
+                    Number: This is a number. Numbers don't have quotes around them.
+                </li>
+                <li>
+                    Boolean: This is a True/False value. The words true and false are special keywords that don't need
+                    quote marks.
+                </li>
+                <li>
+                    Array: This is a structure that allows you to store multiple values in a single reference.
+                </li>
+                <li>
+                    Object: This can be anything. Everything in JavaScript is an object and can be stored in a variable.
+                    Keep this in mind as you learn.
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Comments">
+            <header>
+                Comments
+            </header>
+            <p>
+                Comments are snippets of text that can be added along with code. The browser ignores text marked as
+                comments. You can write comments in JavaScript just as you can in CSS:
+            </p>
+            <code>
+                /* 
+                Everything in between is a comment. 
+                */
+            </code>
+            <p>If your comment contains no line breaks, it's an option to put it behind two slashes like this:</p>
+            <code>// This is a comment</code>
+        </section>
+        <p class="disclaimer">
+            * Disclaimer: All the text has been taken from
+            <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">here</a>
+        </p>
+    </main>
+</body>
+
+</html>
